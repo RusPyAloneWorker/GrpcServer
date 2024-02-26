@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+package forecast;
+
+service Forecast {
+  rpc Ask (ForecastMessage) returns (stream ForecastReply);
+}
+
+message ForecastMessage {
+
+}
+
+message ForecastReply {
+  string message = 1;
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "mTnxryt+AD/VOAY32ulXgbkjQ/DmtOJpAc5FBl/6E6Rb6ei0IKDgmcLB6imP708SDD+bLjQa1VxEwCEf9Psftw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Elect\\RiderProjects\\GrpcServer\\GrpcClient\\GrpcClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Elect\\.nuget\\packages\\google.protobuf\\3.26.0-rc2\\google.protobuf.3.26.0-rc2.nupkg.sha512",
+    "C:\\Users\\Elect\\.nuget\\packages\\grpc.core.api\\2.61.0-pre1\\grpc.core.api.2.61.0-pre1.nupkg.sha512",
+    "C:\\Users\\Elect\\.nuget\\packages\\grpc.net.client\\2.61.0-pre1\\grpc.net.client.2.61.0-pre1.nupkg.sha512",
+    "C:\\Users\\Elect\\.nuget\\packages\\grpc.net.common\\2.61.0-pre1\\grpc.net.common.2.61.0-pre1.nupkg.sha512",
+    "C:\\Users\\Elect\\.nuget\\packages\\grpc.tools\\2.62.0-pre1\\grpc.tools.2.62.0-pre1.nupkg.sha512",
+    "C:\\Users\\Elect\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
