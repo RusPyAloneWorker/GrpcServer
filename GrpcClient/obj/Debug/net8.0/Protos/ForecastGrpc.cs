@@ -52,7 +52,7 @@ namespace GrpcClient {
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::GrpcClient.ForecastMessage, global::GrpcClient.ForecastReply> __Method_Ask = new grpc::Method<global::GrpcClient.ForecastMessage, global::GrpcClient.ForecastReply>(
-        grpc::MethodType.ServerStreaming,
+        grpc::MethodType.DuplexStreaming,
         __ServiceName,
         "Ask",
         __Marshaller_forecast_ForecastMessage,
@@ -92,14 +92,14 @@ namespace GrpcClient {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::GrpcClient.ForecastReply> Ask(global::GrpcClient.ForecastMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncDuplexStreamingCall<global::GrpcClient.ForecastMessage, global::GrpcClient.ForecastReply> Ask(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return Ask(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return Ask(new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::GrpcClient.ForecastReply> Ask(global::GrpcClient.ForecastMessage request, grpc::CallOptions options)
+      public virtual grpc::AsyncDuplexStreamingCall<global::GrpcClient.ForecastMessage, global::GrpcClient.ForecastReply> Ask(grpc::CallOptions options)
       {
-        return CallInvoker.AsyncServerStreamingCall(__Method_Ask, null, options, request);
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_Ask, null, options);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

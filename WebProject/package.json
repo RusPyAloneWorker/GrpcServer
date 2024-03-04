@@ -1,0 +1,48 @@
+{
+  "name": "untitled",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.0",
+    "@grpc/grpc-js-xds": "^1.8.0",
+    "@grpc/proto-loader": "^0.6.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "async": "^1.5.2",
+    "google-protobuf": "^3.0.0",
+    "grpc-web": "^1.5.0",
+    "protobufjs": "^7.2.6",
+    "protoc-gen-grpc-web": "^1.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1",
+    "react-scripts": "^5.0.1",
+    "stream-browserify": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build_proto": "grpc_tools_node_protoc.cmd --js_out=import_style=commonjs,binary:./src/proto --grpc_out=generate_package_definition:. ./src/proto/*.proto"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

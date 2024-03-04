@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package chat;
+
+service Chat {
+  rpc JoinChat (JoinChatRequest) returns (stream MessageNotification);
+  rpc SendMessage (Message) returns (SendMessageResult);
+}
+
+message JoinChatRequest {
+  string message = 1;
+}
+
+message MessageNotification {
+  string message = 1;
+}
+
+message Message {
+  string message = 1;
+}
+
+message SendMessageResult {
+  string message = 1;
+}

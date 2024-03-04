@@ -24,15 +24,15 @@ namespace GrpcClient {
     static ForecastReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVQcm90b3MvZm9yZWNhc3QucHJvdG8SCGZvcmVjYXN0IhEKD0ZvcmVjYXN0",
-            "TWVzc2FnZSIgCg1Gb3JlY2FzdFJlcGx5Eg8KB21lc3NhZ2UYASABKAkyRwoI",
-            "Rm9yZWNhc3QSOwoDQXNrEhkuZm9yZWNhc3QuRm9yZWNhc3RNZXNzYWdlGhcu",
-            "Zm9yZWNhc3QuRm9yZWNhc3RSZXBseTABQg2qAgpHcnBjQ2xpZW50YgZwcm90",
-            "bzM="));
+            "ChVQcm90b3MvZm9yZWNhc3QucHJvdG8SCGZvcmVjYXN0IiIKD0ZvcmVjYXN0",
+            "TWVzc2FnZRIPCgdtZXNzYWdlGAEgASgJIiAKDUZvcmVjYXN0UmVwbHkSDwoH",
+            "bWVzc2FnZRgBIAEoCTJJCghGb3JlY2FzdBI9CgNBc2sSGS5mb3JlY2FzdC5G",
+            "b3JlY2FzdE1lc3NhZ2UaFy5mb3JlY2FzdC5Gb3JlY2FzdFJlcGx5KAEwAUIN",
+            "qgIKR3JwY0NsaWVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.ForecastMessage), global::GrpcClient.ForecastMessage.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.ForecastMessage), global::GrpcClient.ForecastMessage.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.ForecastReply), global::GrpcClient.ForecastReply.Parser, new[]{ "Message" }, null, null, null, null)
           }));
     }
@@ -75,6 +75,7 @@ namespace GrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ForecastMessage(ForecastMessage other) : this() {
+      message_ = other.message_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -82,6 +83,18 @@ namespace GrpcClient {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ForecastMessage Clone() {
       return new ForecastMessage(this);
+    }
+
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 1;
+    private string message_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Message {
+      get { return message_; }
+      set {
+        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -99,6 +112,7 @@ namespace GrpcClient {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Message != other.Message) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -106,6 +120,7 @@ namespace GrpcClient {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -124,6 +139,10 @@ namespace GrpcClient {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (Message.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Message);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -134,6 +153,10 @@ namespace GrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Message.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Message);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -144,6 +167,9 @@ namespace GrpcClient {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (Message.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -155,6 +181,9 @@ namespace GrpcClient {
     public void MergeFrom(ForecastMessage other) {
       if (other == null) {
         return;
+      }
+      if (other.Message.Length != 0) {
+        Message = other.Message;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -171,6 +200,10 @@ namespace GrpcClient {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            Message = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -186,6 +219,10 @@ namespace GrpcClient {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10: {
+            Message = input.ReadString();
+            break;
+          }
         }
       }
     }

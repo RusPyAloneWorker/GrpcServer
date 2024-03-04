@@ -1,0 +1,16 @@
+.greeting-section {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    justify-content: space-around;
+}
+
+
+.greeting-section-image {
+    background-image: url('../../static/media/img/space.jpg');
+    background-size: cover;
+    height: inherit;
+    width: 100%;
+    filter: brightness(0.6);
+}
+

@@ -42,9 +42,17 @@
               "target": "Package",
               "version": "[2.57.0, )"
             },
+            "Grpc.AspNetCore.Web": {
+              "target": "Package",
+              "version": "[2.61.0, )"
+            },
             "Json.Net": {
               "target": "Package",
               "version": "[1.0.33, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

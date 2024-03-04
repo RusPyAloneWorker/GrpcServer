@@ -34,3 +34,13 @@ C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\obj\Debug\net8.0\GrpcServer.g
 C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\obj\Debug\net8.0\ref\GrpcServer.dll
 C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Json.Net.dll
 C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\obj\Debug\net8.0\GrpcServer.sourcelink.json
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Grpc.AspNetCore.Web.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcServer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

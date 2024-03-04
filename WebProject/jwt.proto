@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+package jwt;
+
+service Jwt {
+    rpc Authorize (JwtRequest) returns (JwtResponse);
+}
+
+message JwtRequest {
+    string user = 1;
+    string password = 2;
+}
+
+message JwtResponse {
+    string token = 1;
+}
+

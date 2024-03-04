@@ -19,3 +19,4 @@ C:\Users\Elect\RiderProjects\GrpcServer\GrpcClient\obj\Debug\net8.0\refint\GrpcC
 C:\Users\Elect\RiderProjects\GrpcServer\GrpcClient\obj\Debug\net8.0\GrpcClient.pdb
 C:\Users\Elect\RiderProjects\GrpcServer\GrpcClient\obj\Debug\net8.0\GrpcClient.genruntimeconfig.cache
 C:\Users\Elect\RiderProjects\GrpcServer\GrpcClient\obj\Debug\net8.0\ref\GrpcClient.dll
+C:\Users\Elect\RiderProjects\GrpcServer\GrpcClient\obj\Debug\net8.0\GrpcClient.sourcelink.json

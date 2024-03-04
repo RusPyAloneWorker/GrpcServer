@@ -3,7 +3,9 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <UserSecretsId>GRPC_SERVER-ef04731d-3f2d-4cd8-9e19-8b269ccd9b46</UserSecretsId>
         <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,15 +18,22 @@
           <Generator>MSBuild:Compile</Generator>
         </Protobuf>
         <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+        <Protobuf Include="Protos\chat.proto" GrpcServices="Server" />
+        <Protobuf Include="Protos\jwt.proto" GrpcServices="Server" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+        <PackageReference Include="Grpc.AspNetCore.Web" Version="2.61.0" />
         <PackageReference Include="Json.Net" Version="1.0.33" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
     <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
       <Content Include="obj\GrpcServer.csproj.nuget.dgspec.json" />
       <Content Include="obj\GrpcServer.csproj.nuget.g.props" />
       <Content Include="obj\GrpcServer.csproj.nuget.g.targets" />
